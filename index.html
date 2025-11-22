@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Project "OVERLORD" - Log Index</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSSで指定されてるフォントを読み込む！ -->
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- marqueeタグで魂を注入！ -->
+            <marquee bgcolor="#ffd700" color="#000000">Log file auto-scan sequence initiated... searching for targets...</marquee>
+            <h1 class="glitch" data-text="Log Index">Log Index</h1>
+        </header>
+
+        <section>
+            <!-- h2タグを使ってセクション名を明示！ -->
+            <h2>// Detected Log Files</h2>
+            <div id="log-list" class="link-list">
+                <!-- JSがここに†付きのリストを生成する -->
+            </div>
+            <div id="status-line" style="margin-top:20px;">
+                <span id="loader" style="color:#0f0;"></span><span class="cursor" style="color:#0f0;">_</span>
+            </div>
+        </section>
+
+        <footer>
+            <p class="copyright">File Scanner System v1.0</p>
+        </footer>
+    </div>
+
+    <script src="./scanner.js"></script>
+</body>
+</html>
